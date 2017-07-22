@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Who Are You?</title>
+</head>
+
+<body>
+
+    <form method = "POST" action = "/greet/" name = "myForm">
+        {% csrf_token %}
+        Name:
+        <input type = "text" name = "username" placeholder="Enter Your Name" />
+        <br />
+        Gender:
+        <br />
+        Male:
+        <input type = "radio" name = "gender"  value = "male" />
+        Female:
+        <input type = "radio" name  = "gender"  value = "female" />
+        <br />
+        <input type = "submit" name = "submitBtn" value = "Go!" />
+    </form>
+
+</body>
+
+
+</html>
