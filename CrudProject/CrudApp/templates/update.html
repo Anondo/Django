@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block contentHeading %}Update the data:{% endblock %}
+{% block content %}
+
+{% for student in students %}
+<form action = "http://localhost:8000/perfomUpdate/?name={{student.name}}" method = "POST" name = "updateForm">
+    Name: {{student.name}}<br />
+    New Name:
+    <input type = "text" name = "name" />
+    Age: {{student.age}}<br />
+    New Age:
+    <input type = "text" name = "age" />
+    Institution: {{student.institution}}<br />
+    New Institution:
+    <input type = "text" name = "institution" />
+    Program: {{student.program}}<br />
+    New Program:
+    <input type = "text" name = "program" />
+    Bio: {{student.bio}}<br />
+    New Bio:
+    <input type = "text" name = "bio" />
+    <br />
+    <input type = "submit" value = "Update" />
+</form>
+{% endfor %}
+
+{% endblock %}
