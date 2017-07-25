@@ -21,11 +21,12 @@ Exceedingly scalable:
 ## **Installing Django:**
 1. Go to your command prompt, for windows: cmd
 1. pip install django (assuming you are a pythonista and you know how to use pip. If not,GOOGLE)
+![installing django](https://github.com/Anondo/Django/blob/master/img/install.png)
 1. Thats it!!
 <hr>
 
 ## **Ready To GO With DjanGO:**
 Here we will begin with the HelloProject as our example
-#### **Creating the project***
+#### **Creating The Project**
 blah blah
 <hr>
