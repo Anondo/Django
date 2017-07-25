@@ -27,7 +27,7 @@ Exceedingly scalable:
 
 ## **Ready To GO With DjanGO:**
 Here we will begin with the HelloProject project as our example.
-#### **Creating The Project**
+### **Creating The Project**
 type "django-admin startproject HelloProject" from cmd
 ![creating project](https://github.com/Anondo/Django/blob/master/img/project.png)<br>
 This should create the HelloProject folder on your directory with the following structure:<br>
