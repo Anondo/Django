@@ -8,7 +8,7 @@
 <p>Institution:  {{student.institution}}</p>
 <p>Program:  {{student.program}}</p>
 <p>Bio:  {{student.bio}}</p>
-<a href = "http://localhost:8000/confirmDelete/?key={{student.pk}}"><button >Delete</button></a>
+<a href = "http://localhost:8000/confirmDelete/?name={{student.name}}""><button >Delete</button></a>
 {% endfor %}
 
 {% endblock %}

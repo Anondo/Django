@@ -3,24 +3,19 @@
 {% block content %}
 
 {% for student in students %}
-<form action = "http://localhost:8000/confirmUpdate/?key={{student.pk}}" method = "POST">
-    {% csrf_token %}
+<form action = "http://localhost:8000/perfomUpdate/?name={{student.name}}" method = "POST" name = "updateForm">
     Name: {{student.name}}<br />
     New Name:
     <input type = "text" name = "name" />
-    <br />
     Age: {{student.age}}<br />
     New Age:
     <input type = "text" name = "age" />
-    <br />
     Institution: {{student.institution}}<br />
     New Institution:
     <input type = "text" name = "institution" />
-    <br />
     Program: {{student.program}}<br />
     New Program:
     <input type = "text" name = "program" />
-    <br />
     Bio: {{student.bio}}<br />
     New Bio:
     <input type = "text" name = "bio" />
