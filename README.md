@@ -29,7 +29,7 @@ Exceedingly scalable:
 Here we will begin with the HelloProject project as our example.
 #### **Creating The Project**
 type "django-admin startproject HelloProject" from cmd
-![creating project](https://github.com/Anondo/Django/blob/master/img/project.png)
+![creating project](https://github.com/Anondo/Django/blob/master/img/project.png)<br>
 This should create the HelloProject folder on your directory with the following structure:<br>
 [HelloProject]/<br>
 ├── [HelloProject]/<br>
@@ -50,7 +50,7 @@ type "cd HelloProject" to get inside the project. Here we will have the access t
 manage.py. The manage.py is the local "django-admin" of the project or like its name
 implies, is the manager of the project.
 type "python manage.py startapp HelloApp" in the cmd
-![creating app](https://github.com/Anondo/Django/blob/master/img/app.png)
+![creating app](https://github.com/Anondo/Django/blob/master/img/app.png)<br>
 This should create a HelloApp folder within our root project folder. Its skeleton should be like:<br>
 HelloApp/<br>
    __init__.py<br>
