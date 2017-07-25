@@ -30,14 +30,14 @@ Here we will begin with the HelloProject project as our example.
 #### **Creating The Project**
 type "django-admin startproject HelloProject" from cmd
 ![creating project](https://github.com/Anondo/Django/blob/master/img/project.png)
-This should create the HelloProject folder on your directory with the following structure:
-[HelloProject]/
-├── [HelloProject]/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-└── manage.py
+This should create the HelloProject folder on your directory with the following structure:<br>
+[HelloProject]/<br>
+├── [HelloProject]/<br>
+│   ├── __init__.py<br>
+│   ├── settings.py<br>
+│   ├── urls.py<br>
+│   └── wsgi.py<br>
+└── manage.py<br>
 This is the basic django project skeleton. Here:
 1. __init__.py: this is the file that makes this folder a module(classic python!!)
 1. settings.py: like the name says this file has got the settings for your project
@@ -51,13 +51,13 @@ manage.py. The manage.py is the local "django-admin" of the project or like its 
 implies, is the manager of the project.
 type "python manage.py startapp HelloApp" in the cmd
 ![creating app](https://github.com/Anondo/Django/blob/master/img/app.png)
-This should create a HelloApp folder within our root project folder. Its skeleton should be like:
-HelloApp/
-   __init__.py
-   admin.py
-   models.py
-   tests.py
-   views.py
+This should create a HelloApp folder within our root project folder. Its skeleton should be like:<br>
+HelloApp/<br>
+   __init__.py<br>
+   admin.py<br>
+   models.py<br>
+   tests.py<br>
+   views.py<br>
 1. __init__.py: you know what that is!
 1. admin.py: to register our models as the admin
 1. models.py: to create our models which are classes to be mapped with databases. Oh yea, django supports ORM(object-relation-mapping)
