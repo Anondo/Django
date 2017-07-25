@@ -5,6 +5,7 @@ Django is a high-level python web framework which encourages rapid development w
 design. Its main motto says it all: "The Web Framework For The Perfectionists With Deadlines". Django follows
 the MVT(model-view-template) architectural pattern. Like it is said on the [Django website](https://www.djangoproject.com/) :
 <br>
+
 Ridiculously fast:
 
     Django was designed to help developers take applications from concept to completion as quickly as possible.
@@ -17,20 +18,14 @@ Exceedingly scalable:
 
 
 
-## **Features:**
-1. Sounds(background music , gameplay music , gunshots , zombie roars,  player scream)
-1. Extra Visuals(gunfire , zombie blood etc)
+## **Installing Django:**
+1. Go to your command prompt, for windows: cmd
+1. pip install django (assuming you are a pythonista and you know how to use pip. If not,GOOGLE)
+1. Thats it!!
 <hr>
 
-## **Controls:**
-1. Left mouse click: to shoot
-1. Arrow keys: to move left & right
-<hr>
-
-## **Developed By:**
-1. Ahmad [Anondo](https://github.com/Anondo)
-1. Imtiaz Ahmed
-<hr>
-
-[GET THE SOURCE CODE](https://github.com/Anondo/Java-Zombie-Bite-Project/archive/master.zip)
+## **Ready To GO With DjanGO:**
+Here we will begin with the HelloProject as our example
+#### **Creating the project***
+blah blah
 <hr>
