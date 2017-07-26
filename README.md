@@ -106,4 +106,9 @@ of django uses 8000 as its default port. But you can always mention your own por
 All we need to do is do this:<br>
 ![port](https://github.com/Anondo/Django/blob/master/img/port.png)<br>
 or any other port you may prefer and hit it. Things should run smoothly.
+
+## **Things To Do:**
+1. Before you can use the **django-admin** command like i have used you need to include it in the environmental variable
+   It should be located in **whereeveryouhaveinstalledpython/python27/scripts**
+1. If you are having trouble installing it by pip, [try downloading it from the website](https://www.djangoproject.com/download/)
 <hr>
