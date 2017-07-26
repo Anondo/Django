@@ -50,7 +50,7 @@ type **cd HelloProject** to get inside the project. Here we will have the access
 **manage.py**. The **manage.py** is the local "django-admin" of the project or like its name
 implies, is the manager of the project.
 type **python manage.py startapp HelloWorldApp** in the cmd
-![creating app](https://github.com/Anondo/Django/blob/master/img/app.png)<br>
+![creating app](https://github.com/Anondo/Django/blob/master/img/app2.png)<br>
 This should create a HelloWorldApp folder within our root project folder. Its skeleton should be like:<br>
 HelloWorldApp/<br>
  __init__.py<br>
