@@ -45,14 +45,14 @@ This is the basic django project skeleton. Here:
 1. wsgi.py: this file is if you want to deploy the project over WSGI
 ### **Creating The App**
 A django project is nothing without its apps. Projects are basically the summation of
-some apps which are again reusable in other projects. So lets create our HelloApp:
+some apps which are again reusable in other projects. So lets create our HelloWorldApp:
 type **cd HelloProject** to get inside the project. Here we will have the access to
 **manage.py**. The **manage.py** is the local "django-admin" of the project or like its name
 implies, is the manager of the project.
-type **python manage.py startapp HelloApp** in the cmd
+type **python manage.py startapp HelloWorldApp** in the cmd
 ![creating app](https://github.com/Anondo/Django/blob/master/img/app.png)<br>
-This should create a HelloApp folder within our root project folder. Its skeleton should be like:<br>
-HelloApp/<br>
+This should create a HelloWorldApp folder within our root project folder. Its skeleton should be like:<br>
+HelloWorldApp/<br>
  &ndsp;  __init__.py<br>
  &ndsp;  admin.py<br>
  &ndsp;  models.py<br>
@@ -74,7 +74,7 @@ Insert the app we want to add in the Installed_Apps list. Now we are ready to co
 
 ### **Creating The Views**
 For me the most important part of django is the view. Basically the view determines the behavior of the
-web application. So inside the app folder HelloApp the **views.py** can be found. We are going to write each
+web application. So inside the app folder HelloWorldApp the **views.py** can be found. We are going to write each
 and every view in this file. Our first view(and only for this project) should look like this:<br>
 ![view](https://github.com/Anondo/Django/blob/master/img/view.png)<br>
 As you have guessed the views are basically functions or classes which takes in a request as parameter from the client-side
