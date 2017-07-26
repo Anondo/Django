@@ -40,16 +40,16 @@ This should create the HelloProject folder on your directory with the following 
 └── manage.py<br>
 This is the basic django project skeleton. Here:
 1. __init__.py: this is the file that makes this folder a module(classic python!!)
-1. settings.py: like the name says this file has got the settings for your project
-1. urls.py: this file will contain all the mapping between the urls and the views.
-1. wsgi.py: this file is if you want to deploy the project over WSGI
+1. **settings.py**: like the name says this file has got the settings for your project
+1. **urls.py**: this file will contain all the mapping between the urls and the views.
+1. **wsgi.py**: this file is if you want to deploy the project over WSGI
 ### **Creating The App**
 A django project is nothing without its apps. Projects are basically the summation of
 some apps which are again reusable in other projects. So lets create our HelloWorldApp:
 type **cd HelloProject** to get inside the project. Here we will have the access to
 **manage.py**. The **manage.py** is the local "django-admin" of the project or like its name
 implies, is the manager of the project.
-type **python manage.py startapp HelloWorldApp** in the cmd
+Type **python manage.py startapp HelloWorldApp** in the cmd
 ![creating app](https://github.com/Anondo/Django/blob/master/img/app2.png)<br>
 This should create a HelloWorldApp folder within our root project folder. Its skeleton should be like:<br>
 HelloWorldApp/<br>
@@ -59,14 +59,14 @@ HelloWorldApp/<br>
  tests.py<br>
  views.py<br>
 1. __init__.py: you know what that is!
-1. admin.py: to register our models as the admin
-1. models.py: to create our models which are classes to be mapped with databases. Oh yea, django supports ORM(object-relation-mapping)
-1. tests.py : to test our application
-1. views.py: to create magic. I mean, to create the views which performs all the main application functions required for the website
+1. **admin.py**: to register our models as the admin
+1. **models.py**: to create our models which are classes to be mapped with databases. Oh yea, django supports ORM(object-relation-mapping)
+1. **tests.py**: to test our application
+1. **views.py**: to create magic. I mean, to create the views which performs all the main application functions required for the website
 
 ### **Installing The App**
-Each app we create or add inside a project, we need to install it or make the apps the part
-of the current project. To do so, go the project folder HelloProject inside the root folder(from
+Each app we create or add inside a project, we need to install it or make the app(s) the part
+of the current project. To do so, go to the project folder HelloProject inside the root folder(from
 now on it will we assumed that we are inside the root project folder) and open **settings.py**. Now all
 we need to do is this:<br>
 ![installing app](https://github.com/Anondo/Django/blob/master/img/appInstall.png)<br>
@@ -85,9 +85,10 @@ So now that we have our required view, lets map it with a URL.
 ### **Creating URLs**
 When we type a url in our browser django will find the matching view with it and that view is going to handle the request
 and send a response. Inside our project folder we have seen the **urls.py** folder. We are going to need it now:<br>
-![url](https://github.com/Anondo/Django/blob/master/img/url.png)
+![url](https://github.com/Anondo/Django/blob/master/img/url.png)<br>
 import the view you have created into the **urls.py** file and then inside the urlpatterns list insert our
-first url  as shown in the picture. The url function takes a regular expression as the first argument and the name of the view
+first url  as shown in the picture. Actually it is the second one as the first one is automated and for the admin interface(laters!).
+The url function takes a regular expression as the first argument and the name of the view
 as the second argument. We can name our url anything we want but the regex must be mainteined. <br>
 **Alright we are ready to launch!!**
 
