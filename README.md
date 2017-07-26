@@ -53,11 +53,11 @@ type **python manage.py startapp HelloWorldApp** in the cmd
 ![creating app](https://github.com/Anondo/Django/blob/master/img/app.png)<br>
 This should create a HelloWorldApp folder within our root project folder. Its skeleton should be like:<br>
 HelloWorldApp/<br>
- &ndsp;  __init__.py<br>
- &ndsp;  admin.py<br>
- &ndsp;  models.py<br>
- &ndsp; tests.py<br>
- &ndsp; views.py<br>
+ __init__.py<br>
+ admin.py<br>
+  models.py<br>
+ tests.py<br>
+ views.py<br>
 1. __init__.py: you know what that is!
 1. admin.py: to register our models as the admin
 1. models.py: to create our models which are classes to be mapped with databases. Oh yea, django supports ORM(object-relation-mapping)
