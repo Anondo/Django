@@ -53,11 +53,11 @@ type **python manage.py startapp HelloApp** in the cmd
 ![creating app](https://github.com/Anondo/Django/blob/master/img/app.png)<br>
 This should create a HelloApp folder within our root project folder. Its skeleton should be like:<br>
 HelloApp/<br>
- &ndsp;&ndsp;  __init__.py<br>
- &ndsp;&ndsp;  admin.py<br>
- &ndsp;&ndsp;  models.py<br>
- &ndsp;&ndsp;  tests.py<br>
- &ndsp;&ndsp;  views.py<br>
+ &ndsp;  __init__.py<br>
+ &ndsp;  admin.py<br>
+ &ndsp;  models.py<br>
+ &ndsp; tests.py<br>
+ &ndsp; views.py<br>
 1. __init__.py: you know what that is!
 1. admin.py: to register our models as the admin
 1. models.py: to create our models which are classes to be mapped with databases. Oh yea, django supports ORM(object-relation-mapping)
@@ -68,14 +68,14 @@ HelloApp/<br>
 Each app we create or add inside a project, we need to install it or make the apps the part
 of the current project. To do so, go the project folder HelloProject inside the root folder(from
 now on it will we assumed that we are inside the root project folder) and open **settings.py**. Now all
-we need to do is this:
+we need to do is this:<br>
 ![installing app](https://github.com/Anondo/Django/blob/master/img/appInstall.png)<br>
 Insert the app we want to add in the Installed_Apps list. Now we are ready to code.
 
 ### **Creating The Views**
 For me the most important part of django is the view. Basically the view determines the behavior of the
 web application. So inside the app folder HelloApp the **views.py** can be found. We are going to write each
-and every view in this file. Our first view(and only for this project) should look like this:
+and every view in this file. Our first view(and only for this project) should look like this:<br>
 ![view](https://github.com/Anondo/Django/blob/master/img/view.png)<br>
 As you have guessed the views are basically functions or classes which takes in a request as parameter from the client-side
 and formulates a response and sends that response back to the server, to the url address it is mapped with. The function HttpResponse
@@ -84,7 +84,7 @@ So now that we have our required view, lets map it with a URL.
 
 ### **Creating URLs**
 When we type a url in our browser django will find the matching view with it and that view is going to handle the request
-and send a response. Inside our project folder we have seen the **urls.py** folder. We are going to need it now:
+and send a response. Inside our project folder we have seen the **urls.py** folder. We are going to need it now:<br>
 ![url](https://github.com/Anondo/Django/blob/master/img/url.png)
 import the view you have created into the **urls.py** file and then inside the urlpatterns list insert our
 first url  as shown in the picture. The url function takes a regular expression as the first argument and the name of the view
@@ -93,16 +93,16 @@ as the second argument. We can name our url anything we want but the regex must 
 
 ### **Running The Server**
 Django comes with a built-in development server to be used during the development period of the web application.
-We are going to need the help of our manager(**manage.py**) now. So go to the command prompt and do this:
+We are going to need the help of our manager(**manage.py**) now. So go to the command prompt and do this:<br>
 ![running server](https://github.com/Anondo/Django/blob/master/img/server.png)<br>
-The output should be like:
+The output should be like:<br>
 ![output](https://github.com/Anondo/Django/blob/master/img/output.png)<br>
 The migrations which the server just warned us about is related to models we will get there later(maybe!).<br><br>
-Now go to your browser and hit **localhost:8000/hello**. You should get this:
+Now go to your browser and hit **localhost:8000/hello**. You should get this:<br>
 ![browser output](https://github.com/Anondo/Django/blob/master/img/browserOutput.png)<br>
 Though this should run smoothly but then again if you get any errors, it might be cause of the port. The development server
 of django uses 8000 as its default port. But you can always mention your own port number when the **runserver** command is applied.
-All we need to do is do this:
+All we need to do is do this:<br>
 ![port](https://github.com/Anondo/Django/blob/master/img/port.png)<br>
 or any other port you may prefer and hit it. Things should run smoothly.
 <hr>
