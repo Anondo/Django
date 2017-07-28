@@ -8,7 +8,6 @@ def index(request):
 def greet(request):
     name = request.POST.get("username")
     gender = request.POST.get("gender")
-    print gender
     context = {
         "name" : name,
         "gender" : gender,

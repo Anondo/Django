@@ -78,7 +78,7 @@ web application. So inside the app folder HelloWorldApp the **views.py** can be 
 and every view in this file. Our first view(and only for this project) should look like this:<br>
 ![view](https://github.com/Anondo/Django/blob/master/img/view.png)<br>
 As you have guessed the views are basically functions or classes which takes in a request as parameter from the client-side
-and formulates a response and sends that response back to the server, to the url address it is mapped with. The function HttpResponse
+and formulates a response and sends that response back to the server, to the url address it is mapped with. The class HttpResponse
 takes a response as a parameter. The function render is used to send templates and its contents, we will see that later(maybe).<br><br>
 So now that we have our required view, lets map it with a URL.
 
@@ -98,7 +98,7 @@ We are going to need the help of our manager(**manage.py**) now. So go to the co
 ![running server](https://github.com/Anondo/Django/blob/master/img/server.png)<br>
 The output should be like:<br>
 ![output](https://github.com/Anondo/Django/blob/master/img/output.png)<br>
-The migrations which the server just warned us about is related to models we will get there later(maybe!).<br><br>
+The migrations which the server just warned us about is related to models, we will get there later(maybe!).<br><br>
 Now go to your browser and hit **localhost:8000/hello**. You should get this:<br>
 ![browser output](https://github.com/Anondo/Django/blob/master/img/browserOutput.png)<br>
 Though this should run smoothly but then again if you get any errors, it might be cause of the port. The development server
