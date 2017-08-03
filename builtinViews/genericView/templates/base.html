@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% block head %}
+        <title>{% block title %}This is the title{% endblock %}</title>
+        {% endblock %}
+    </head>
+    <body>
+        {% block contentHeading %}
+        <h4>This is a django application demonstrating the built-in class based views of django like(ListView , DetailView etc.)</h4>
+        {% endblock %}
+        {% block content %}
+        This is the content
+        {% endblock %}
+    </body>
+</html>
