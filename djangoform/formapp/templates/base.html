@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% block head %}
+        <title>{% block title %}This is the title{% endblock %}</title>
+        {% endblock %}
+    </head>
+    <body>
+        <h2>This django application will demonstrate the use of the form class of django.</h2>
+        <h4><a href = "{% url 'data_enter' %}">Create Person Entry</a></h4>
+        {% block content %}
+        This is the content
+        {% endblock %}
+    </body>
+</html>
