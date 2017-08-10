@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from genericView.views import BooklistView , BookDetailView
+from genericView.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^books/$' , BooklistView.as_view(template_name = "booklist.html")),
+    url(r'^books/$' , BooklistView.as_view(template_name = "booklist.html") , name = "books"),
     url(r'^book/(?P<pk>[0-9]+)/$' , BookDetailView.as_view(template_name = "book.html") , name = "book-detail"),
+    url(r'^addbooks/$' , CreateBook.as_view() , name = "add_book"),
+    url(r'^editbook/(?P<pk>[0-9]+)/$' , UpdateBook.as_view() , name = "edit_book")
 ]

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Create Book {% endblock %}
+
+{% block content %}
+
+<h4>Note: the template name must be the name of the model + _form. For this example books_form.html and must be under the folder of the app name.</h4>
+<form method = "POST">
+    {% csrf_token %}
+    {% for field in form %}
+
+    <label>{{field.label_tag}}</label>
+    {{field}}<br />
+
+    {% endfor %}
+    <button type = "Submit">Go</button>
+</form>
+
+{% endblock %}
