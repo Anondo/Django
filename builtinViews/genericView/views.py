@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
+from django.core.urlresolvers import reverse_lazy
 from .models import Books
 
 # Create your views here.
@@ -21,3 +22,7 @@ class CreateBook(generic.CreateView):
 class UpdateBook(generic.UpdateView):
     model = Books
     fields = ['name' , 'author' , 'genre' , 'price']
+
+class DeleteBook(generic.DeleteView):
+    model = Books
+    success_url = reverse_lazy("books")

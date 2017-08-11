@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^books/$' , BooklistView.as_view(template_name = "booklist.html") , name = "books"),
     url(r'^book/(?P<pk>[0-9]+)/$' , BookDetailView.as_view(template_name = "book.html") , name = "book-detail"),
     url(r'^addbooks/$' , CreateBook.as_view() , name = "add_book"),
-    url(r'^editbook/(?P<pk>[0-9]+)/$' , UpdateBook.as_view() , name = "edit_book")
+    url(r'^editbook/(?P<pk>[0-9]+)/$' , UpdateBook.as_view() , name = "edit_book"),
+    url(r'^deletebook/(?P<pk>[0-9]+)/$' , DeleteBook.as_view() , name = "removebook"),
 ]

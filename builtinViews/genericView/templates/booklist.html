@@ -9,6 +9,10 @@
 <ul>
     <li>
         <a href = "{% url 'book-detail' book.pk %}">{{book.name}}</a>
+        <form action = "{% url 'removebook' book.pk%}" method = "POST">
+            {% csrf_token %}
+            <button type = "submit">Delete</button>
+        </form>
     </li>
 </ul>
 
