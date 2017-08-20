@@ -1,0 +1,20 @@
+<html>
+
+   <head>
+       {% block head %}
+       <title>{% block title %}{% endblock %}</title>
+       {% endblock %}
+   </head>
+
+
+   <body>
+       {% block content_heading %}
+       This is a django application demonstrating the connection with mySql instead of the default sqlite.
+       This App only focuses on fetching data from the MySql database
+       {% endblock %}
+       {% block content %}
+       {% endblock %}
+   </body>
+
+
+</html>
