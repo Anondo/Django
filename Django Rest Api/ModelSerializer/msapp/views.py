@@ -12,4 +12,5 @@ class BookRestView(APIView):
     def get(self, request):
         books = Book.objects.all()
         serializer = BookSerializer(books,  many = True)
+        print serializer.data
         return Response(serializer.data)
