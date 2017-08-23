@@ -7,7 +7,7 @@ from django.db import models
 class Book(models.Model):
     name = models.CharField(max_length = 180)
     author = models.CharField(max_length = 120)
-    genre = models.CharField(max_length = 120)
+    genre = models.CharField(max_length = 30)
     price = models.FloatField()
 
     def __str__(self):
