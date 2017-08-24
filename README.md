@@ -72,7 +72,7 @@ we need to do is this:<br>
 ![installing app](https://github.com/Anondo/Django/blob/master/img/appInstall.png)<br>
 Insert the app we want to add in the Installed_Apps list. Now we are ready to code.
 
-### **Creating The Views**
+### **The Views**
 For me the most important part of django is the view. Basically the view determines the behavior of the
 web application. So inside the app folder HelloWorldApp the **views.py** can be found. We are going to write each
 and every view in this file. Our first view(and only for this project) should look like this:<br>
@@ -82,7 +82,7 @@ and formulates a response and sends that response back to the server, to the url
 takes a response as a parameter. The function render is used to send templates and its contents, we will see that later(maybe).<br><br>
 So now that we have our required view, lets map it with a URL.
 
-### **Creating URLs**
+### **URLs**
 When we type a url in our browser django will find the matching view with it and that view is going to handle the request
 and send a response. Inside our project folder we have seen the **urls.py** folder. We are going to need it now:<br>
 ![url](https://github.com/Anondo/Django/blob/master/img/url.png)<br>
