@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Django RESTful Form</title>
+</head>
+
+<body>
+
+   <form action = ""  method = "POST">
+       {% csrf_token %}
+
+       <table>
+           {% for field in form %}
+           <tr>
+               <td>
+                   <label>{{field.label_tag}}</label>
+               </td>
+               <td>
+                   {{field}}
+               </td>
+           </tr>
+           {% endfor %}
+           <tr>
+               <td>
+                   <input type = "submit" value = "Submit" />
+               </td>
+           </tr>
+
+       </table>
+
+   </form>
+
+
+
+
+
+</body>
+
+
+
+</html>
