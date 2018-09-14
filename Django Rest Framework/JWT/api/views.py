@@ -9,7 +9,7 @@ class UserViewset(viewsets.ModelViewSet):
     queryset = User.objects.all()
 
     def get_permissions(self):
-        if self.action == 'create' or self.action == 'destroy':
+        if self.action != 'list' or self.action != 'retrieve':
             permission_classes = [IsAdminUser]
         else:
             permission_classes = [IsAuthenticated]
